@@ -9,7 +9,7 @@ import { map } from 'rxjs/operators';
 })
 export class JobListingService {
 
-  api_url = 'http://localhost:1337';
+  api_url = 'http://18.217.7.211:1337';
   jobpostingUrl = `${this.api_url}/jobpostings`;
   
   constructor(private http: HttpClient) { }
