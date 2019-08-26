@@ -291,7 +291,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   justify-content: space-between;
   width:100%;
-  background-color: #f9faf0;
+  background-color: #f8f8f8;
   z-index:99;
 }
 
@@ -301,11 +301,87 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
+#for-students{
+  font-family: "Poppins", sans-serif;
+  height: 600px;
+  background-color: #f8f8f8;
+  position: relative
+}
+
+#for-student-logo{
+  height:50%;
+  width:auto;
+  right: 10%;
+  position: absolute; 
+  bottom: 0;
+}
+
+#for-student-desc{
+  position: absolute; 
+  top:100px;
+  left:10%;
+}
+
+#for-charities{
+  font-family: "Poppins", sans-serif;
+  height: 600px;
+  position: relative;
+  background-color: #f5f3ec;
+}
+
+#for-charities-logo{
+  left: 10%;
+  position: absolute; 
+  bottom: 0;
+}
+
+.accent{
+  font-family: "Poppins", sans-serif;
+  color: #c6c741;
+}
+
+#for-charities-desc{
+  position: absolute; 
+  top:100px;
+  right:10%;
+}
+
+#for-charities-1{
+  position: absolute; 
+  top:200px;
+  left:45%;
+}
+
+#how-it-works #text{
+  font-weight: bolder;
+  font-size: 33px;
+  position: absolute; 
+  top:360px;
+  left:45%;
+}
+
+#how-it-works #arrow{
+  font-weight: bolder;
+  font-size: 33px;
+  position: absolute; 
+  top:400px;
+  left:50%;
+}
+
+.explore-projects{
+  background: url(/assets/green-button.png) no-repeat;
+  background-size: 40% !important;
+  width:100% !important;
+  height:100% !important;
+  font-size: 10px !important;
+  margin-left: 5vh;
+  border-radius: 0;
+}
 
 #nav-menu-container {
   padding-left: 200px;
   float: left;
-  background-color: #f9faf0;
+  background-color: #f8f8f8;
   margin: 0;
   z-index:999 !important;
 }
@@ -313,7 +389,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Nav Meu Container */
 #nav-menu-container-right {
   padding-right: 200px;
-  background-color: #f9faf0;
+  background-color: #f8f8f8;
   float: right;
   margin: 0;
   z-index:999 !important;
@@ -631,7 +707,7 @@ td {
 
 
 tr.job-row:nth-child(odd) {
-  background: #f9faf0 !important;
+  background: #f8f8f8 !important;
 }
 tr.job-row:nth-child(even) {background: white !important;}
 
@@ -903,7 +979,7 @@ button {outline:0 !important;}
   height: 60px;
   line-height: 60px; /* line-heigh= */
   display: inline-block;
-  background-color: #f9faf0;
+  background-color: #f8f8f8;
   margin-left: 10px;
 }
 
@@ -1142,8 +1218,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*text*/
 p {
   color: #A0A0A0;
-  font-family: 'Raleway', sans-serif;
-  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
   margin-bottom: 0px;
 }
@@ -1172,15 +1247,23 @@ p {
 
 /*buttons*/
 .btn-option {
-  background-color: #d1d364 !important;
-  border-color: #d1d364 !important;
   color: white !important;
   z-index: 1 !important;
   position: relative !important;
 }
 
 #student-button {
+  background: url(/assets/button-blue.png) no-repeat;
+  background-size: 100%;
   margin-left: 5vh;
+  border-radius: 0;
+}
+
+#charity-button {
+  background: url(/assets/button-red.png) no-repeat;
+  background-size: 100%;
+  margin-left: 5vh;
+  border-radius: 0;
 }
 
 @media (max-width: 375px) {
