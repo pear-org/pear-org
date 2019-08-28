@@ -69,9 +69,43 @@
     </div>
   </div>
 </div>
+<!--
 <div class="app">
   <div id="job-scroll-preview">
     <div class="card" id="software-card"><img class="soft-keyboard" src="assets/keyboard.png" alt="designer icon" /><img class="software-desc" src="assets/software-desc.png" alt="designer description" /></div>
     <div class="card" id="design-card"><img class="design-icon" src="assets/design-icon.png" alt="designer icon" /><img class="design-desc" src="assets/designer-desc.png" alt="designer description" /></div>
   </div>
 </div>
+-->
+<ngb-carousel [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
+    <ng-template ngbSlide>
+        <div class="picsum-img-wrapper" >
+        </div>
+      <div class="carousel-caption">
+        <h3>First slide label</h3>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+
+      </div>
+      <div class="carousel-caption">
+        <h3>Second slide label</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+          <div class="preview">
+
+            </div>
+      </div>
+      <div class="carousel-caption">
+        <h3>Third slide label</h3>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+
+  
