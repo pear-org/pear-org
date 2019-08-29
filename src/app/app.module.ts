@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule} from '@angular/common';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AppComponentHeader} from './app.component.header'
@@ -12,11 +13,11 @@ import { JobListingService } from './services/job-listing.service';
 import { ListingComponent } from './components/jobsearch/listing.component'
 import { RouterModule, Routes } from '@angular/router';
 import { PublicComponent } from './components/homepage/homepage.component';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 const appRoutes: Routes = [
   { path: 'jobsearch', component: ListingComponent },
-  { path: 'public', component: PublicComponent
-  }
+  { path: 'public', component: PublicComponent, data: {animation: 'HomePage'}}
 ];
 
 @NgModule({
@@ -34,6 +35,8 @@ const appRoutes: Routes = [
     HttpClientModule,
     FormsModule,
     NgbModule.forRoot(),
+    MDBBootstrapModule.forRoot(),
+    BrowserAnimationsModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only

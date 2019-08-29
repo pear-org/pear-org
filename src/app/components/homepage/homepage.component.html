@@ -1,83 +1,170 @@
-<app-navbar></app-navbar>
-<div class="container"><img id="pear-name" src="assets/pear-name.png" />
+<div class="container" [@fadeInOut]>
+  <img id="pear-name" src="assets/pear-name.png" />
   <p id="value-prop-1">To create an open platform that increases charities' accessibility to student talent,</p>
   <p id="value-prop-2">and equips students with professional experience through charitable projects</p>
   <div class="row"> 
-    <div class="col-1"></div>
-    <div class="col-5">
-      <button class="btn btn-option btn-block float-right" id="student-button" type="button" onclick="window.location.href = '/public#software-card';">STUDENTS</button>
-    </div>
-    <div class="col-5">
-      <button class="btn btn-option float-left btn-block" id="charity-button" type="button" onclick="window.location.href = '/public#charities-info';">CHARITIES</button>
-    </div>
-    <div class="col-1"></div>
-  </div><img id="pear-logo" src="assets/pear-logo.png" /><br /><br /><br /><br /><br /><br />
-</div>
-<div id="for-students">
-  <div id="for-student-desc">
-    <h1>FOR STUDENT</h1>
-    <p>- Develop <span class="accent">professional</span> skills</p>
-    <p>- Explore your <span class="accent">career interests</span></p>
-    <p>- Contribute to <span class="accent">social cause</span></p>
-    <p>- Work anywhere, anytime</p>
-    <button class="btn btn-option btn-block float-right explore-projects" type="button" onclick="window.location.href = '/public#software-card';">EXPLORE PROJECTS</button>
+  <div class="col-5">
+    <button class="btn btn-option btn-block" id="student-button" type="button" mdbPageScroll onclick="window.location.href = '/public#for-students';">STUDENTS</button>
   </div>
+  <div class="col-1"></div>
+  <div class="col-5">
+    <button class="btn btn-option btn-block" id="charity-button" type="button" mdbPageScroll onclick="window.location.href = '/public#for-charities';">CHARITIES</button>
+  </div>
+  <div class="col-1"></div>
+  </div><img style="margin:50px;" id="pear-logo" src="assets/pear-logo.png" /><br /><br /><br /><br /><br /><br />
+  </div>
+  <div id="for-students">
+  <div id="for-student-desc">
+  <h1>FOR STUDENT</h1>
+  <p style="font-size: 18pt;">- Develop <span class="accent">professional</span> skills</p>
+  <p style="font-size: 18pt;">- Explore your <span class="accent">career interests</span></p>
+  <p style="font-size: 18pt;">- Contribute to <span class="accent">social cause</span></p>
+  <p style="font-size: 18pt;">- Work anywhere, anytime</p>
+  </div>
+  <button class="btn btn-option btn-block" id="explore-projects" style="position: absolute;left:10%;top: 60%;"type="button" data-toggle="modal" data-target=".modal">EXPLORE PROJECTS</button>
   <img id="for-student-logo" src="assets/for-student-logo.png" />
-</div>
-<div id="for-charities">
+  </div>
+  <div id="for-charities">
   <div id="for-charities-desc">
-    <h1>FOR CHARITY</h1>
-    <p>We offer &nbsp;<span style="font-size: 28px;font-weight: bolder;" class="accent">2</span> &nbsp;services</p>
+  <h1>FOR CHARITY</h1>
+  <p style="font-size: 18pt;">We offer &nbsp;<span style="font-size: 28px;font-weight: bolder;" class="accent">2</span> &nbsp;services</p>
   </div>
   <div id="for-charities-1">
-    <p><span style="font-size: 28px;font-weight: bolder;" class="accent">1.</span> post a <span class="accent">project</span> online</p>
-    <br>
-    <p><span style="font-size: 28px;font-weight: bolder;" class="accent">2.</span> host a <span class="accent">competition</span> </p>
+  <p style="font-size: 18pt;"><span style="font-size: 28px;font-weight: bolder;" class="accent">1.</span> post a <span class="accent">project</span> online</p>
+  <br>
+  <p style="font-size: 18pt;"><span style="font-size: 28px;font-weight: bolder;" class="accent">2.</span> host a <span class="accent">competition</span> </p>
   </div>
   <div id="how-it-works">
-    <p id="text">How it works <img src="assets/map.png"/> </p>
-    <p id="arrow">&#9660;</p>
+  <p id="text">How it works <img src="assets/map.png"/> </p>
+  <p id="arrow">&#9660;</p>
   </div>
+  <button class="btn btn-option btn-block" id="explore-projects" style="position: absolute;left:70%;top: 70%;"type="button" data-toggle="modal" data-target=".modal">EXPLORE PROJECTS</button>
   <img id="for-charities-logo" src="assets/for-charity-logo.png"/>
-</div>
-<div id="workflow">
-    <img src="assets/workflow.png" />
-</div>
-<div id="user-statistics">
-  <h1 class="text-center mb-sm-0 font-weight-bold p-4" id="signup">SIGN UP TODAY!</h1>
-  <div class="d-flex text-center justify-content-center p-5" id="signup_body">
-    <div class="d-flex flex-column bg-light m-3 shadow" style="width:16rem; height: 20rem;">
-      <div style="height:8rem;"><img class="p-5" src="/images/student.png" alt="..." /></div>
-      <div style="height:5rem;">NUMBER OF<span class="student_text">STUDENTS</span> REGISTERED</div>
-      <div class="d-flex align-items-center justify-content-center student_background" style="height: 7rem;">
-        <h1 class="text-light font-weight-bold">10,000</h1>
+  </div>
+  <div id="workflow">
+  <img src="assets/workflow.png" />
+  </div>
+  <!--
+  >>>>>>> 60df1d4e0e651ce8b57f2fe72a4528f43f620a96
+  <div class="app">
+  <div id="job-scroll-preview">
+  <div class="card" id="software-card"><img class="soft-keyboard" src="assets/keyboard.png" alt="designer icon" /><img class="software-desc" src="assets/software-desc.png" alt="designer description" /></div>
+  <div class="card" id="design-card"><img class="design-icon" src="assets/design-icon.png" alt="designer icon" /><img class="design-desc" src="assets/designer-desc.png" alt="designer description" /></div>
+  </div>
+  </div> -->
+  
+  <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
+  <mdb-carousel-item>
+      <div class="picsum-img-wrapper">
+        <div class="picsum-container" >
+            <div class="right" style="background-color: #66b6c5;">
+                <h4 style="position:relative; top:15%; left:25%; color: black; font-family: Poppins, sans-serif; font-weight: bolder;">TOP PROJECTS COMPLETED</h4>
+                <mdb-icon fas icon="award" style="z-index:1; color:#fdbc4b; position: absolute; transform: rotate(-30deg); font-size: 40pt; top:22%; left:13%;"></mdb-icon>
+                <div style="top:20%; left:15%;" class="top-project">
+                    <p style="display: inline-block; padding-top: 3%; padding-left: 10%; position: absolute; font-size: 17pt; font-family: Poppins, sans-serif;"><span style="color: black; font-weight: bolder;">AI chat bot </span>by NGO Charity </p><p style="display: inline-block; padding-top: 4%; right: 10%; position: absolute; font-family: Poppins, sans-serif; font-size: 13pt; color:red;"><mdb-icon fas icon="heart" style="font-size: 17pt;"></mdb-icon> 1.5k</p>
+                </div>
+                <div style="top:30%; left:15%;" class="top-project">
+                    <p style="display: inline-block; padding-top: 3%; padding-left: 10%; position: absolute; font-size: 17pt; font-family: Poppins, sans-serif;"><span style="color: black; font-weight: bolder;">Counting Coins </span>by Charity B</p><p style="display: inline-block; padding-top: 4%; right: 10%; position: absolute; font-family: Poppins, sans-serif; font-size: 13pt; color:red;"><mdb-icon fas icon="heart" style="font-size: 17pt;"></mdb-icon> 1.2k</p>
+                </div>
+                <div style="top:40%; left:15%;" class="top-project">
+                    <p style="display: inline-block; padding-top: 3%; padding-left: 10%; position: absolute; font-size: 17pt; font-family: Poppins, sans-serif;"><span style="color: black; font-weight: bolder;">Sleeping Assistant </span>by Charity C</p><p style="display: inline-block; padding-top: 4%; right: 10%; position: absolute; font-family: Poppins, sans-serif; font-size: 13pt; color:red;"><mdb-icon fas icon="heart" style="font-size: 17pt;"></mdb-icon> 982</p>
+                </div>
+                <p style="color: white; position:absolute; top:85%; margin-left: 15%; margin-right:10%; font-family: Poppins, sans-serif; font-size: 14px;">More completed projects ></p>
+            </div>
+            <div class="left">
+                <h2 style="position:relative; top:15%; left:20%; color:black; font-family: Poppins, sans-serif; font-weight: bolder;" >PROJECTS</h2>
+                <h4 style="position:relative; top:18%; left:25%; color: #66b6c5; font-family: Poppins, sans-serif; font-weight: bolder;">TECHNOLOGY</h4>
+                <p style="position:relative; top:20%; left:22%;">Front-end Developer</p>
+                <p style="position:relative; top:20.5%; left:22%;">Back-end Developer</p>
+                <p style="position:relative; top:21%; left:22%;">Full stack Developer</p>
+                <p style="position:relative; top:21.5%; left:22%;">Software Engineer</p>
+                <p style="position:relative; top:22%; left:22%;">Web Developer</p>
+                <!-- <button class="btn btn-option btn-block float-right explore-projects" type="button" onclick="window.location.href = '/public#software-card';">EXPLORE PROJECTS</button>
+                -->
+                <p style="position:absolute; top:85%; text-align: center; margin-left: 10%; margin-right:10%; font-family: Poppins, sans-serif; font-size: 14px;">If you have a passion for programming, connect with a charity and start your side project today!</p>
+            </div>
+        </div>
+        
+      </div>
+    
+    </mdb-carousel-item>
+  <mdb-carousel-item>
+    <div class="picsum-img-wrapper">
+        <div class="picsum-container" >
+            <div class="right" style="background-color: #c15230;">
+                <h4 style="position:relative; top:15%; left:25%; color: black; font-family: Poppins, sans-serif; font-weight: bolder;">TOP PROJECTS COMPLETED</h4>
+                <div style="top:20%; left:15%;" class="top-project">
+                    <p style="display: inline-block; padding-top: 3%; padding-left: 10%; position: absolute; font-size: 17pt; font-family: Poppins, sans-serif;"><span style="color: black; font-weight: bolder;">Logo Creation </span>by NGO Charity </p><p style="display: inline-block; padding-top: 4%; right: 10%; position: absolute; font-family: Poppins, sans-serif; font-size: 13pt; color:red;"><mdb-icon fas icon="heart" style="font-size: 17pt;"></mdb-icon> 882</p>
+                </div>
+                <div style="top:30%; left:15%;" class="top-project">
+                    <p style="display: inline-block; padding-top: 3%; padding-left: 10%; position: absolute; font-size: 17pt; font-family: Poppins, sans-serif;"><span style="color: black; font-weight: bolder;">Website Designer </span>by Charity B</p><p style="display: inline-block; padding-top: 4%; right: 10%; position: absolute; font-family: Poppins, sans-serif; font-size: 13pt; color:red;"><mdb-icon fas icon="heart" style="font-size: 17pt;"></mdb-icon> 345</p>
+                </div>
+                <div style="top:40%; left:15%;" class="top-project">
+                    <p style="display: inline-block; padding-top: 3%; padding-left: 10%; position: absolute; font-size: 17pt; font-family: Poppins, sans-serif;"><span style="color: black; font-weight: bolder;">UI/UX Design</span>by Charity C</p><p style="display: inline-block; padding-top: 4%; right: 10%; position: absolute; font-family: Poppins, sans-serif; font-size: 13pt; color:red;"><mdb-icon fas icon="heart" style="font-size: 17pt;"></mdb-icon> 210</p>
+                </div>
+                <p style="color: white; position:absolute; top:85%; margin-left: 15%; margin-right:10%; font-family: Poppins, sans-serif; font-size: 14px;">More completed projects ></p>
+              </div>
+            <div class="left">
+                <h2 style="position:relative; top:15%; left:20%; color:black; font-family: Poppins, sans-serif; font-weight: bolder;" >PROJECTS</h2>
+                <h4 style="position:relative; top:18%; left:25%; color: #c15230; font-family: Poppins, sans-serif; font-weight: bolder;">DESIGN</h4>
+                <p style="position:relative; top:20%; left:22%;">UI/UX</p>
+                <p style="position:relative; top:20.5%; left:22%;">Logo Design</p>
+                <p style="position:relative; top:21%; left:22%;">Advertisement Design</p>
+            </div>
+        </div>
+    </div>
+  </mdb-carousel-item>
+  </mdb-carousel>
+  <div id="user-statistics" style="padding-top:100px;">
+    <h1 class="text-center mb-sm-0 font-weight-bold p-4" id="signup">SIGN UP TODAY!</h1>
+    <div class="d-flex text-center justify-content-center p-5" id="signup_body">
+      <div class="d-flex flex-column bg-light m-3 shadow" style="width:16rem; height: 20rem;">
+        <div style="height:8rem; background-color:white;"><img class="p-5" src="/assets/student.png" alt="..." /></div>
+        <div style="height:5rem; background-color:white;">NUMBER OF<span class="student_text">STUDENTS</span> REGISTERED</div>
+        <div class="d-flex align-items-center justify-content-center student_background" style="height: 7rem;">
+          <h1 class="text-light font-weight-bold" style="color:white;">10,000</h1>
+        </div>
+      </div>
+      <div class="d-flex flex-column bg-light m-3 shadow" style="width: 16rem; height: 20rem;">
+        <div style="height:8rem; background-color:white;"><img class="p-5" src="assets/charity.png" alt="..." /></div>
+        <div style="height:5rem; background-color:white;">NUMBER OF<span class="charity_text">CHARITIES</span> REGISTERED</div>
+        <div class="d-flex align-items-center justify-content-center charity_background" style="height: 7rem;">
+          <h1 class="text-light font-weight-bold" style="color:white;">1,000</h1>
+        </div>
+      </div>
+      <div class="d-flex flex-column bg-light m-3 shadow" style="width: 16rem; height: 20rem;">
+        <div style="height:8rem; background-color:white;"><img class="p-5" src="assets/project.png" alt="..." /></div>
+        <div style="height:5rem; background-color:white;">NUMBER OF<span class="project_text">PROJECTS</span> COMPLETED</div>
+        <div class="d-flex align-items-center justify-content-center project_background" style="height: 7rem;">
+          <h1 class="text-light font-weight-bold" style="color:white;">100</h1>
+        </div>
       </div>
     </div>
-    <div class="d-flex flex-column bg-light m-3 shadow" style="width: 16rem; height: 20rem;">
-      <div style="height:8rem;"><img class="p-5" src="assets/charity.png" alt="..." /></div>
-      <div style="height:5rem;">NUMBER OF<span class="charity_text">CHARITIES</span> REGISTERED</div>
-      <div class="d-flex align-items-center justify-content-center charity_background" style="height: 7rem;">
-        <h1 class="text-light font-weight-bold">1,000</h1>
-      </div>  
-    </div>
-    <div class="d-flex flex-column bg-light m-3 shadow" style="width: 16rem; height: 20rem;">
-      <div style="height:8rem;"><img class="p-5" src="assets/project.png" alt="..." /></div>
-      <div style="height:5rem;">NUMBER OF<span class="project_text">PROJECTS</span> COMPLETED</div>
-      <div class="d-flex align-items-center justify-content-center project_background" style="height: 7rem;">
-        <h1 class="text-light font-weight-bold">100</h1>
-      </div> 
-    </div> 
-  </div> 
-</div> 
-<div class="app">
-  <div id="job-scroll-preview">
-    <div class="card" id="software-card"><img class="soft-keyboard" src="assets/keyboard.png" alt="designer icon" /><img class="software-desc" src="assets/software-desc.png" alt="designer description" /></div>
-    <div class="card" id="design-card"><img class="design-icon" src="assets/design-icon.png" alt="designer icon" /><img class="design-desc" src="assets/designer-desc.png" alt="designer description" /></div>
   </div>
-</div>
-<div id="testsnap" snapscroll="" snap-height="500px">
-	<div class="pp-section">Some section</div>
-	<div class="pp-section">Some section</div>
-	<div class="pp-section">Some section</div>
-	<div class="pp-section">Some section</div>
-</div>
+
+  <!-- The Modal -->
+  <div class="modal fade sign-up" role="dialog">
+      <div class="modal-dialog modal-sm" >
+        <div class="modal-content" style="width:600px !important;height:600px !important; margin-left:-120px; ">
+          <div style="position:absolute; width:100%; top: 30px;">
+              <h2 style="position: relative !important; text-align:center;">Join to be <span class="accent">paired</span> today!</h2>
+          </div>
+          <div style="height: 550px; width:100%;">
+              <input [(ngModel)]="searchText" class="sign-up-input search-input" placeholder="example@mail.com"/>
+              <a class="btn btn-option-nav li-sign-up" style="position:absolute; left:50%; margin-left:-40.25px; top:50%;" routerLink="#sign-up">SIGN UP</a>
+              <div style="position:absolute; width:100%; top:55%;">
+                  <p style="position: relative !important; text-align:center; ">Sign up with</p>
+              </div>
+
+              <div style="position:absolute; width:100%; top:70%;">
+                  <p style="position: relative !important; text-align:center; ">Already have an account?</p>
+              </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
