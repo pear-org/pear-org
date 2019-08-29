@@ -12,6 +12,7 @@ import { JobListingService } from './services/job-listing.service';
 import { ListingComponent } from './components/jobsearch/listing.component'
 import { RouterModule, Routes } from '@angular/router';
 import { PublicComponent } from './components/homepage/homepage.component';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 const appRoutes: Routes = [
   { path: 'jobsearch', component: ListingComponent },
@@ -34,6 +35,7 @@ const appRoutes: Routes = [
     HttpClientModule,
     FormsModule,
     NgbModule.forRoot(),
+    MDBBootstrapModule.forRoot(),
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only

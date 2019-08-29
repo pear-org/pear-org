@@ -5,7 +5,11 @@
   "projects": {
     "PearAngular": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "styleext": "scss"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -29,7 +33,13 @@
               "src/vendor/stylesheets/bootstrap.min.css",
               "src/vendor/stylesheets/bootstrap-4.3.1.min.css",
               "src/vendor/animate/animate.min.css",
-              "node_modules/font-awesome/css/font-awesome.css"
+              "node_modules/font-awesome/css/font-awesome.css",
+              "node_modules/angular-bootstrap-md/assets/scss/bootstrap/bootstrap.scss",
+              "node_modules/angular-bootstrap-md/assets/scss/mdb.scss",
+              "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss",
+              "node_modules/@fortawesome/fontawesome-free/scss/solid.scss",
+              "node_modules/@fortawesome/fontawesome-free/scss/regular.scss",
+              "node_modules/@fortawesome/fontawesome-free/scss/brands.scss"
             ],
             "scripts": ["src/vendor/javascripts/jquery-3.3.1.min.js",
               "src/vendor/javascripts/bootstrap.bundle.min.js",
