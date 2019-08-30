@@ -20,6 +20,7 @@ import { ErrorInterceptor } from './guards/error.interceptor';
 import { fakeBackendProvider } from './guards/fake-backend';
 import { StudentDashboardComponent } from './components/student-dashboard/student-dashboard.component';
 import { AboutComponent } from './components/about/about.component';
+import { StudentNavComponent } from './student-nav/student-nav.component';
 
 const appRoutes: Routes = [
   { path: 'jobsearch', component: ListingComponent },
@@ -38,7 +39,8 @@ const appRoutes: Routes = [
     StartsWithPipe,
     LoginComponent,
     StudentDashboardComponent,
-    AboutComponent
+    AboutComponent,
+    StudentNavComponent
   ],
   imports: [
     BrowserModule,

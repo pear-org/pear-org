@@ -1,4 +1,4 @@
-<div class="wrapper">
+<div class="wrapper" >
     <!-- Sidebar -->
     <nav id="sidebar">
         <ul class="list-unstyled components">
@@ -31,7 +31,7 @@
             </li>-->
         </ul>
     </nav>
-    <div style="flex-direction: row;">
+    <div style="flex-direction: row;" [@fadeInOut]>
         <div style="position:relative; width:82vw; height:100vh;">
         <div style="position:absolute;top: 12%; width:100%;">
             <h1 style=" text-align: center; font-size: 28px; color: darkgrey;font-family: Poppins, sans-serif;">Welcome back, <span class="accent">Crystal</span></h1>
@@ -41,7 +41,7 @@
         <img style="position:absolute; left: 50%; top:32%; height:60%; width:auto;" src="assets/tree.PNG" />
         </div>
         <ngb-tabset id="projects" type="pills" class="tabset1" [orientation]="currentOrientation" >
-        <ngb-tab title="CURRENT PROJECTS">
+        <ngb-tab title="APPLICATIONS">
             <ng-template ngbTabContent>
                     <div class="rectangle-box">
                         <h1>PROJECT</h1>
@@ -50,23 +50,29 @@
                         <p style="font-size:12pt;">Status: <span style="color:black;font-size:12pt;"><b>APPLIED</b></span></p>
                         <div class="decor-strip" style="background-color: #828a27;"></div>
                     </div>
-                    <div class="rectangle-box">
-                        <h1>PROJECT 2</h1>
-                        <span style="padding-left: 40px;">by &nbsp;</span><span style="color: #879017; text-transform: uppercase;"><b> NGO charity </b></span>
-                        <p>Waterloo, ON</p>
-                        <p style="font-size:12pt;">Status: </p><p><ngb-progressbar showValue="true" type="warning" [value]="150" [max]="200"></ngb-progressbar></p>
-                        <div class="decor-strip" style="background-color: #828a27;"></div>
-                    </div>
+            </ng-template>
+        </ngb-tab>
+        <ngb-tab title="ALL PROJECTS">
+            <ng-template ngbTabContent>
+                <div class="rectangle-box">
+                    <h1>PROJECT</h1>
+                    <span style="padding-left: 40px;">by &nbsp;</span><span style="color: #879017; text-transform: uppercase;"><b> NGO charity </b></span>
+                    <p>Waterloo, ON</p>
+                    <p style="font-size:12pt;">Status: <span style="color:black;font-size:12pt;"><b>APPLIED</b></span></p>
+                    <div class="decor-strip" style="background-color: #828a27;"></div>
+                </div>
+                <div class="rectangle-box">
+                    <h1>PROJECT 2</h1>
+                    <span style="padding-left: 40px;">by &nbsp;</span><span style="color: #879017; text-transform: uppercase;"><b> NGO charity </b></span>
+                    <p>Waterloo, ON</p>
+                    <p style="font-size:12pt;">Status: </p><p><ngb-progressbar showValue="true" type="warning" [value]="150" [max]="200"></ngb-progressbar></p>
+                    <div class="decor-strip" style="background-color: #828a27;"></div>
+                </div>
             </ng-template>
         </ngb-tab>
         <ngb-tab title="COMPLETED PORJECTS">
             <ng-template ngbTabContent>
-                <p>You don't have any completed projects.</p>
-            </ng-template>
-        </ngb-tab>
-        <ngb-tab title="FAVOURITES">
-            <ng-template ngbTabContent>
-                <p>You don't have any favourites.</p>
+                
             </ng-template>
         </ngb-tab>
     </ngb-tabset>
