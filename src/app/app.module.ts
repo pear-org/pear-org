@@ -6,18 +6,27 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AppComponentHeader} from './app.component.header'
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import { FormsModule } from '@angular/forms';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { StartsWithPipe } from './components/jobsearch/listFilter.pipe'
 import { JobListingService } from './services/job-listing.service';
 import { ListingComponent } from './components/jobsearch/listing.component'
 import { RouterModule, Routes } from '@angular/router';
 import { PublicComponent } from './components/homepage/homepage.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { LoginComponent } from './components/login/login.component';
+import { JwtInterceptor } from './guards/jwt.interceptor';
+import { ErrorInterceptor } from './guards/error.interceptor';
+import { fakeBackendProvider } from './guards/fake-backend';
+import { StudentDashboardComponent } from './components/student-dashboard/student-dashboard.component';
+import { AboutComponent } from './components/about/about.component';
 
 const appRoutes: Routes = [
   { path: 'jobsearch', component: ListingComponent },
-  { path: 'public', component: PublicComponent, data: {animation: 'HomePage'}}
+  { path: 'public', component: PublicComponent},
+  { path: 'login', component: LoginComponent},
+  { path: 'student-dashboard', component: StudentDashboardComponent},
+  { path: 'about', component: AboutComponent }
 ];
 
 @NgModule({
@@ -26,7 +35,10 @@ const appRoutes: Routes = [
     AppComponentHeader,
     PublicComponent,
     ListingComponent,
-    StartsWithPipe
+    StartsWithPipe,
+    LoginComponent,
+    StudentDashboardComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +46,7 @@ const appRoutes: Routes = [
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     NgbModule.forRoot(),
     MDBBootstrapModule.forRoot(),
     BrowserAnimationsModule,
@@ -42,7 +55,11 @@ const appRoutes: Routes = [
       { enableTracing: true } // <-- debugging purposes only
     )
   ],
-  providers: [JobListingService],
+  providers: [JobListingService, 
+    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
+    { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
+    // provider used to create fake backend
+    fakeBackendProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

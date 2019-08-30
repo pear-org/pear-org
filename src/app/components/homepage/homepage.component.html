@@ -151,15 +151,20 @@
           </div>
           <div style="height: 550px; width:100%;">
               <input [(ngModel)]="searchText" class="sign-up-input search-input" placeholder="example@mail.com"/>
-              <a class="btn btn-option-nav li-sign-up" style="position:absolute; left:50%; margin-left:-40.25px; top:50%;" routerLink="#sign-up">SIGN UP</a>
+              <button class="btn btn-option btn-block" id="explore-projects" style="position: absolute; left:50%; width: 100px !important; height: 45px !important; margin-left:-50px;top: 50%;" type="button" data-toggle="modal" data-target=".modal">SIGN UP</button>
+              <button [routerLink]="'/login'" class="btn btn-option btn-block" id="charity-button" style="position: absolute; left:50%; width: 100px !important; height: 45px !important; margin-left:-50px;top: 76%; font-size: 10px;" type="button">LOG IN</button>
               <div style="position:absolute; width:100%; top:55%;">
                   <p style="position: relative !important; text-align:center; ">Sign up with</p>
               </div>
-
+              <a class="p-2 fa-lg fb-ic">
+                  <mdb-icon style="position: absolute; left:45%; top: 62%;" fab icon="facebook-f" class="blue-text"> </mdb-icon>
+              </a>
+              <a class="p-2 fa-lg ins-ic">
+                  <mdb-icon style="position: absolute; left:50%; top: 62%;" fab icon="github" class="blue-text"> </mdb-icon>
+              </a>
               <div style="position:absolute; width:100%; top:70%;">
                   <p style="position: relative !important; text-align:center; ">Already have an account?</p>
               </div>
-
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
