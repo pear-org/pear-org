@@ -102,3 +102,69 @@ ul ul a {
     background: #6d7fcc;
 }
 
+:host ::ng-deep .tabset1 div.tab-content{
+    min-height:500px;
+}
+
+:host ::ng-deep .tabset1 ul.justify-content-start{
+    margin-left: 12%;
+    margin-bottom: 5%;
+    width:60vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+:host ::ng-deep .tabset1 a.nav-link {
+    text-align: center;
+    border-radius:0;
+    border: 1px solid #828a27;
+    width:20vw;
+    color:#828a27;
+    font-family: Poppins, sans-serif;
+  }
+  
+  :host ::ng-deep .tabset1 a.nav-link.active {
+    width:20vw;
+    background-color: #828a27;
+    color: white;
+    border-radius:0;
+  }
+
+.rectangle-box {
+  float:left;
+  margin-right: 20px;
+  margin-left: 12%;
+  margin-bottom: 40px;
+  position: relative;
+  width: 60vw;
+  height: 240px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.rectangle-box h1 {
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 20px;
+    color: grey;
+    font-family: "Poppins Bold", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  
+  
+.rectangle-box span {
+    font-size: 12px;
+    color: darkgray;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.rectangle-box p {
+    font-size: 12px;
+    color: darkgray;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: "Poppins Bold", sans-serif;
+    font-weight: 400;
+    z-index: -1 !important;
+}
