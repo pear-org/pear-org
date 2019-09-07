@@ -1,5 +1,5 @@
 <div class="container" [@fadeInOut]>
-  <img id="pear-name" src="assets/pear-name.png" />
+  <img class="animated bounceIn" id="pear-name" src="assets/pear-name.png" />
   <p id="value-prop-1">To create an open platform that increases charities' accessibility to student talent,</p>
   <p id="value-prop-2">and equips students with professional experience through charitable projects</p>
   <div class="row"> 
@@ -11,38 +11,47 @@
     <button class="btn btn-option btn-block" id="charity-button" type="button" mdbPageScroll onclick="window.location.href = '/public#for-charities';">CHARITIES</button>
   </div>
   <div class="col-1"></div>
-  </div><img style="margin:50px;" id="pear-logo" src="assets/pear-logo.png" /><br /><br /><br /><br /><br /><br />
+  </div><img style="margin-top:50px;margin-left:25px;" id="pear-logo" src="assets/pear-logo.png" /><br /><br /><br /><br /><br /><br />
   </div>
   <div id="for-students">
   <div id="for-student-desc">
-  <h1>FOR STUDENT</h1>
-  <p style="font-size: 18pt;">- Develop <span class="accent">professional</span> skills</p>
-  <p style="font-size: 18pt;">- Explore your <span class="accent">career interests</span></p>
-  <p style="font-size: 18pt;">- Contribute to <span class="accent">social cause</span></p>
-  <p style="font-size: 18pt;">- Work anywhere, anytime</p>
+  <h1 style="font-weight: bolder;">FOR STUDENT</h1>
+  <br>
+  <p style="font-size: 12pt; color:darkgray;">Working on charities through PEAR allows you to...</p>
+  <br>
+  <br>
+  <p style="font-size: 18pt;" class="wow animated slideInLeft" >- Develop <span class="accent">professional</span> skills</p>
+  <br>
+  <p style="font-size: 18pt;" class="wow animated slideInLeft" >- Explore your <span class="accent">career interests</span></p>
+  <br>
+  <p style="font-size: 18pt;" class="wow animated slideInLeft" >- Contribute to <span class="accent">social cause</span></p>
+  <br>
+  <p style="font-size: 18pt;" class="wow animated slideInLeft" >- Work anywhere, anytime</p>
   </div>
-  <button class="btn btn-option btn-block" id="explore-projects" style="position: absolute;left:10%;top: 60%;"type="button" data-toggle="modal" data-target=".modal">EXPLORE PROJECTS</button>
+  <button class="btn btn-option btn-block" id="explore-projects" style="position: absolute;left:10%;top: 82%;"type="button" data-toggle="modal" data-target=".modal">EXPLORE PROJECTS</button>
   <img id="for-student-logo" src="assets/for-student-logo.png" />
   </div>
-  <div id="for-charities">
+<div id="for-charities">
   <div id="for-charities-desc">
-  <h1>FOR CHARITY</h1>
-  <p style="font-size: 18pt;">We offer &nbsp;<span style="font-size: 28px;font-weight: bolder;" class="accent">2</span> &nbsp;services</p>
+  <h1 style="font-weight: bolder;">FOR CHARITY</h1>
+  <p style="font-size: 18pt;" class="wow animated slideInRight">We offer &nbsp;<span style="font-size: 28px;font-weight: bolder;" class="accent">2</span> &nbsp;services</p>
   </div>
   <div id="for-charities-1">
-  <p style="font-size: 18pt;"><span style="font-size: 28px;font-weight: bolder;" class="accent">1.</span> post a <span class="accent">project</span> online</p>
-  <br>
-  <p style="font-size: 18pt;"><span style="font-size: 28px;font-weight: bolder;" class="accent">2.</span> host a <span class="accent">competition</span> </p>
+    <br>
+    <p style="font-size: 18pt;" class="wow animated slideInLeft"><span style="font-size: 28px;font-weight: bolder;" class="accent">1.</span> post a <span class="accent">project</span> online</p>
+    <br>
+    <p style="font-size: 18pt;" class="wow animated slideInLeft"><span style="font-size: 28px;font-weight: bolder;" class="accent">2.</span> host a <span class="accent">competition</span> </p>
+
   </div>
   <div id="how-it-works">
-  <p id="text">How it works <img src="assets/map.png"/> </p>
-  <p id="arrow">&#9660;</p>
+    <p id="text">How it works <img src="assets/map.png"/> </p>
+    <p class="zoom" id="arrow" mdbPageScroll onclick="window.location.href = '/public#workflow';">&#9660;</p>
   </div>
   <button class="btn btn-option btn-block" id="explore-projects" style="position: absolute;left:70%;top: 70%;"type="button" data-toggle="modal" data-target=".modal">EXPLORE PROJECTS</button>
   <img id="for-charities-logo" src="assets/for-charity-logo.png"/>
   </div>
-  <div id="workflow">
-  <img src="assets/workflow.png" />
+  <div style="height:750px;position:relative;" id="workflow">
+  <img style="left: 7%; top:5%;position:absolute;height:90%; width:auto;" src="assets/workflow.png" />
   </div>
   <!--
   >>>>>>> 60df1d4e0e651ce8b57f2fe72a4528f43f620a96
