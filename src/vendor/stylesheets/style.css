@@ -306,7 +306,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #for-students{
   font-family: "Poppins", sans-serif;
-  height: 750px;
+  height: 100vh;
   background-color: #f8f8f8;
   position: relative
 }
@@ -327,7 +327,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #for-charities{
   font-family: "Poppins", sans-serif;
-  height: 750px;
+  height: 100vh;
   position: relative;
   background-color: #f5f3ec;
 }
@@ -376,7 +376,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .picsum-img-wrapper{
-  height:700px;
+  height:100vh;
   position: relative;
   width:100%;
   background-color: #f8f8f8;
@@ -384,11 +384,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .picsum-container {
   position:absolute;
-  height: 600px;
+  height: 80%;;
   width:90%;
   left: 50%;
   margin-left: -45vw;
-  top: 50%;
+  top: 42%;
   margin-top: -300px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
