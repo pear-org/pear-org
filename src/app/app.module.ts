@@ -23,7 +23,7 @@ import { AboutComponent } from './components/about/about.component';
 
 const appRoutes: Routes = [
   { path: 'jobsearch', component: ListingComponent },
-  { path: 'public', component: PublicComponent},
+  { path: '', component: PublicComponent},
   { path: 'login', component: LoginComponent},
   { path: 'student-dashboard', component: StudentDashboardComponent},
   { path: 'about', component: AboutComponent }
