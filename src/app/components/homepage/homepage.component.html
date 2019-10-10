@@ -1,50 +1,57 @@
-<div class="container" [@fadeInOut]>
-  <img class="animated bounceIn" id="pear-name" src="assets/pear-name.png" />
-  <p id="value-prop-1">To create an open platform that increases charities' accessibility to student talent,</p>
-  <p id="value-prop-2">and equips students with professional experience through charitable projects</p>
-  <div class="row">
-  <div class="col-5">
-    <button class="btn btn-option btn-block" id="student-button" type="button" mdbPageScroll onclick="window.location.href = '/#for-students';">STUDENTS</button>
+<div class="container-fluid container-height" [@fadeInOut]>
+  <div class="pear-name-container">
+    <img class="animated bounceIn" id="pear-name" src="assets/pear-name.png" />
   </div>
-  <div class="col-1"></div>
-  <div class="col-5">
-    <button class="btn btn-option btn-block" id="charity-button" type="button" mdbPageScroll onclick="window.location.href = '/#for-charities';">CHARITIES</button>
+  <p class="text-center value-prop-1">To create an open platform that increases charities' accessibility to student talent,</p>
+  <p class="text-center value-prop-2">and equips students with professional experience through charitable projects</p>
+  <div class="row row-height">
+
+    <div class="col-2 col-lg-3"></div>
+    <div class="col-3 col-lg-2" id="col-padding">
+      <button class="btn btn-option btn-block student-button" type="button" mdbPageScroll onclick="window.location.href = '/#for-students';">STUDENTS</button>
+    </div>
+    <div class="col-2"></div>
+    <div class="col-3 col-lg-2" id="col-padding">
+      <button class="btn btn-option btn-block charity-button" type="button" mdbPageScroll onclick="window.location.href = '/#for-charities';">CHARITIES</button>
+    </div>
+    <div class="col-2 col-lg-3"></div>
   </div>
-  <div class="col-1"></div>
-  </div><img style="margin-top:50px;margin-left:25px;" id="pear-logo" src="assets/pear-logo.png" /><br /><br /><br /><br /><br /><br />
+  <div class="pear-logo-container">
+    <img class="pear-logo" src="assets/pear-logo.png" />
+  </div>
   </div>
   <div id="for-students">
-  <div id="for-student-desc">
-  <h1 style="font-weight: bolder; font-size: 45pt;">FOR STUDENTS</h1>
-  <br>
-  <p style="font-size: 14pt; color:darkgray;">Working with charities through PEAR allows you to...</p>
-  <br>
-  <p style="font-size: 18pt;" class="wow animated slideInLeft" >- Develop <span class="accent">professional</span> skills</p>
-  <br>
-  <p style="font-size: 18pt;" class="wow animated slideInLeft" >- Explore your <span class="accent">career interests</span></p>
-  <br>
-  <p style="font-size: 18pt;" class="wow animated slideInLeft" >- Contribute to a <span class="accent">social cause</span></p>
-  <br>
-  <p style="font-size: 18pt;" class="wow animated slideInLeft" >- Work anywhere, anytime</p>
+    <div id="for-student-desc">
+      <h1 style="font-weight: bolder; font-size: 45pt;">FOR STUDENTS</h1>
+      <br>
+      <p style="font-size: 14pt; color:darkgray;">Working with charities through PEAR allows you to...</p>
+      <br>
+      <p style="font-size: 18pt;" class="wow animated slideInLeft">- Develop <span class="accent">professional</span> skills</p>
+      <br>
+      <p style="font-size: 18pt;" class="wow animated slideInLeft">- Explore your <span class="accent">career interests</span></p>
+      <br>
+      <p style="font-size: 18pt;" class="wow animated slideInLeft">- Contribute to a <span class="accent">social cause</span></p>
+      <br>
+      <p style="font-size: 18pt;" class="wow animated slideInLeft">- Work anywhere, anytime</p>
+    </div>
+    <button class="btn btn-option btn-block" id="explore-projects" style="position: absolute;left:10%;top: 82%;"type="button" data-toggle="modal" data-target=".modal">EXPLORE PROJECTS</button>
+    <img id="for-student-logo" src="assets/for-student-logo.png" />
   </div>
-  <button class="btn btn-option btn-block" id="explore-projects" style="position: absolute;left:10%;top: 82%;"type="button" data-toggle="modal" data-target=".modal">EXPLORE PROJECTS</button>
-  <img id="for-student-logo" src="assets/for-student-logo.png" />
-  </div>
-<div id="for-charities">
-  <div id="for-charities-desc">
-  <h1 style="font-weight: bolder; font-size:45pt;">FOR CHARITIES</h1>
-  <br>
-  <p style="font-size: 14pt; color:darkgray;">Working with students through PEAR allows you to...</p>
-  <br>
-  <p style="font-size: 18pt;" class="wow animated slideInRight" >- Identify <span class="accent">bottlenecks</span> utilizing <span class="accent">data</span></p>
-  <br>
-  <p style="font-size: 18pt;" class="wow animated slideInRight" >- Increase project <span class="accent">quality</span> and <span class="accent">turnaround time</span></p>
-  <br>
-  <p style="font-size: 18pt;" class="wow animated slideInRight" >- Increase <span class="accent">efficiency</span> and decrease <span class="accent">cost</span> of <span class="accent">recruitment</span></p>
-  <br>
-  <p style="font-size: 18pt;" class="wow animated slideInRight" >- <span class="accent">Digitalize</span> your operations and workflow</p>
-  </div>
-  <!-- <p style="font-size: 18pt;" class="wow animated slideInRight">We offer &nbsp;<span style="font-size: 28px;font-weight: bolder;" class="accent">2</span> &nbsp;services</p>
+    <div id="for-charities">
+      <div id="for-charities-desc">
+        <h1 style="font-weight: bolder; font-size:45pt;">FOR CHARITIES</h1>
+        <br>
+        <p style="font-size: 14pt; color:darkgray;">Working with students through PEAR allows you to...</p>
+        <br>
+        <p style="font-size: 18pt;" class="wow animated slideInRight">- Identify <span class="accent">bottlenecks</span> utilizing <span class="accent">data</span></p>
+        <br>
+        <p style="font-size: 18pt;" class="wow animated slideInRight">- Increase project <span class="accent">quality</span> and <span class="accent">turnaround time</span></p>
+        <br>
+        <p style="font-size: 18pt;" class="wow animated slideInRight">- Increase <span class="accent">efficiency</span> and decrease <span class="accent">cost</span> of <span class="accent">recruitment</span></p>
+        <br>
+        <p style="font-size: 18pt;" class="wow animated slideInRight">- <span class="accent">Digitalize</span> your operations and workflow</p>
+      </div>
+      <!-- <p style="font-size: 18pt;" class="wow animated slideInRight">We offer &nbsp;<span style="font-size: 28px;font-weight: bolder;" class="accent">2</span> &nbsp;services</p>
   </div>
   <div id="for-charities-1">
     <br>
@@ -53,17 +60,17 @@
     <p style="font-size: 18pt;" class="wow animated slideInLeft"><span style="font-size: 28px;font-weight: bolder;" class="accent">2.</span> Host a <span class="accent">competition</span> </p>
 
   </div> -->
-  <!-- <div id="how-it-works">
+      <!-- <div id="how-it-works">
     <p id="text">How it works <img src="assets/map.png"/> </p>
     <p class="zoom" id="arrow" mdbPageScroll onclick="window.location.href = '/#workflow';">&#9660;</p>
   </div> -->
-  <button class="btn btn-option btn-block" id="explore-projects" style="position: absolute;left:55%;top: 80%;"type="button" data-toggle="modal" data-target=".modal">EXPLORE PROJECTS</button>
-  <img id="for-charities-logo" src="assets/for-charity-logo.png"/>
+      <button class="btn btn-option btn-block" id="explore-projects" style="position: absolute;left:55%;top: 80%;"type="button" data-toggle="modal" data-target=".modal">EXPLORE PROJECTS</button>
+      <img id="for-charities-logo" src="assets/for-charity-logo.png"/>
   </div>
-  <!-- <div style="height:100vh;position:relative;" id="workflow">
+      <!-- <div style="height:100vh;position:relative;" id="workflow">
   <img style="left: 7%; top:5%;position:absolute;height:95%; width:auto;" src="assets/workflow.png" />
   </div> -->
-  <!--
+      <!--
   >>>>>>> 60df1d4e0e651ce8b57f2fe72a4528f43f620a96
   <div class="app">
   <div id="job-scroll-preview">
@@ -72,25 +79,35 @@
   </div>
   </div> -->
 
-  <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
-  <mdb-carousel-item>
-      <div class="picsum-img-wrapper">
-        <div class="picsum-container" >
-            <div class="right" style="background-color: #66b6c5;">
+      <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
+        <mdb-carousel-item>
+          <div class="picsum-img-wrapper">
+            <div class="picsum-container">
+              <div class="right" style="background-color: #66b6c5;">
                 <h4 style="position:relative; top:15%; left:25%; color: black; font-family: Poppins, sans-serif; font-weight: bolder;">TOP PROJECTS COMPLETED</h4>
                 <mdb-icon fas icon="award" style="z-index:1; color:#fdbc4b; position: absolute; transform: rotate(-30deg); font-size: 40pt; top:22%; left:13%;"></mdb-icon>
                 <div style="top:20%; left:15%" class="top-project">
-                    <p style="display: inline-block; padding-top: 3%; padding-left: 10%; position: absolute; font-size: 17pt; font-family: Poppins, sans-serif;"><span style="color: black; font-weight: bolder;">AI chat bot </span>by NGO Charity </p><p style="display: inline-block; padding-top: 4%; right: 10%; position: absolute; font-family: Poppins, sans-serif; font-size: 13pt; color:red;"><mdb-icon fas icon="heart" style="font-size: 17pt;"></mdb-icon> 1.5k</p>
+                  <p style="display: inline-block; padding-top: 3%; padding-left: 10%; position: absolute; font-size: 17pt; font-family: Poppins, sans-serif;"><span style="color: black; font-weight: bolder;">AI chat bot </span>by NGO Charity </p>
+                  <p style="display: inline-block; padding-top: 4%; right: 10%; position: absolute; font-family: Poppins, sans-serif; font-size: 13pt; color:red;">
+                    <mdb-icon fas icon="heart" style="font-size: 17pt;"></mdb-icon> 1.5k
+                  </p>
                 </div>
                 <div style="top:30%; left:15%;" class="top-project">
-                    <p style="display: inline-block; padding-top: 3%; padding-left: 10%; position: absolute; font-size: 17pt; font-family: Poppins, sans-serif;"><span style="color: black; font-weight: bolder;">Counting Coins </span>by Charity B </p><p style="display: inline-block; padding-top: 4%; right: 10%; position: absolute; font-family: Poppins, sans-serif; font-size: 13pt; color:red;"><mdb-icon fas icon="heart" style="font-size: 17pt;"></mdb-icon> 1.2k</p>
+                  <p style="display: inline-block; padding-top: 3%; padding-left: 10%; position: absolute; font-size: 17pt; font-family: Poppins, sans-serif;"><span style="color: black; font-weight: bolder;">Counting Coins </span>by Charity B </p>
+                  <p style="display: inline-block; padding-top: 4%; right: 10%; position: absolute; font-family: Poppins, sans-serif; font-size: 13pt; color:red;">
+                    <mdb-icon fas icon="heart" style="font-size: 17pt;"></mdb-icon> 1.2k
+                  </p>
                 </div>
                 <div style="top:40%; left:15%;" class="top-project">
-                    <p style="display: inline-block; padding-top: 3%; padding-left: 10%; position: absolute; font-size: 17pt; font-family: Poppins, sans-serif;"><span style="color: black; font-weight: bolder;">Sleeping Assistant </span>by Charity C </p><p style="display: inline-block; padding-top: 4%; right: 10%; position: absolute; font-family: Poppins, sans-serif; font-size: 13pt; color:red;"><mdb-icon fas icon="heart" style="font-size: 17pt;"></mdb-icon> 982</p>
+                  <p style="display: inline-block; padding-top: 3%; padding-left: 10%; position: absolute; font-size: 17pt; font-family: Poppins, sans-serif;"><span style="color: black; font-weight: bolder;">Sleeping Assistant </span>by Charity C
+                  </p>
+                  <p style="display: inline-block; padding-top: 4%; right: 10%; position: absolute; font-family: Poppins, sans-serif; font-size: 13pt; color:red;">
+                    <mdb-icon fas icon="heart" style="font-size: 17pt;"></mdb-icon> 982
+                  </p>
                 </div>
                 <p style="color: white; position:absolute; top:85%; margin-left: 15%; margin-right:10%; font-family: Poppins, sans-serif; font-size: 16px;">More completed projects ></p>
-            </div>
-            <div class="left">
+              </div>
+              <div class="left">
                 <h2 style="position:relative; top:15%; left:20%; color:black; font-family: Poppins, sans-serif; font-weight: bolder;" >PROJECTS</h2>
                 <h4 style="position:relative; top:18%; left:20%; color: #66b6c5; font-family: Poppins, sans-serif; font-weight: bolder;">TECHNOLOGY</h4>
                 <p style="position:relative; top:20%; left:20%;">Front-end Developer</p>
@@ -100,94 +117,104 @@
                 <p style="position:relative; top:22%; left:20%;">Web Developer</p>
                 <!-- <button class="btn btn-option btn-block float-right explore-projects" type="button" onclick="window.location.href = '/public#software-card';">EXPLORE PROJECTS</button>
                 -->
-                <p style="position:absolute; top:85%; text-align: center; margin-left: 10%; margin-right:10%; font-family: Poppins, sans-serif; font-size: 14px;">If you have a passion for programming, connect with a charity and start your side project today!</p>
+                <p style="position:absolute; top:85%; text-align: center; margin-left: 10%; margin-right:10%; font-family: Poppins, sans-serif; font-size: 14px;">If you have a passion for programming, connect with a charity and start your side
+                  project today!</p>
+              </div>
             </div>
-        </div>
 
-      </div>
+          </div>
 
-    </mdb-carousel-item>
-  <mdb-carousel-item>
-    <div class="picsum-img-wrapper">
-        <div class="picsum-container" >
-            <div class="right" style="background-color: #c15230;">
+        </mdb-carousel-item>
+        <mdb-carousel-item>
+          <div class="picsum-img-wrapper">
+            <div class="picsum-container">
+              <div class="right" style="background-color: #c15230;">
                 <h4 style="position:relative; top:15%; left:25%; color: black; font-family: Poppins, sans-serif; font-weight: bolder;">TOP PROJECTS COMPLETED</h4>
                 <div style="top:20%; left:15%;" class="top-project">
-                    <p style="display: inline-block; padding-top: 3%; padding-left: 10%; position: absolute; font-size: 17pt; font-family: Poppins, sans-serif;"><span style="color: black; font-weight: bolder;">Logo Creation </span>by NGO Charity </p><p style="display: inline-block; padding-top: 4%; right: 10%; position: absolute; font-family: Poppins, sans-serif; font-size: 13pt; color:red;"><mdb-icon fas icon="heart" style="font-size: 17pt;"></mdb-icon> 882</p>
+                  <p style="display: inline-block; padding-top: 3%; padding-left: 10%; position: absolute; font-size: 17pt; font-family: Poppins, sans-serif;"><span style="color: black; font-weight: bolder;">Logo Creation </span>by NGO Charity </p>
+                  <p style="display: inline-block; padding-top: 4%; right: 10%; position: absolute; font-family: Poppins, sans-serif; font-size: 13pt; color:red;">
+                    <mdb-icon fas icon="heart" style="font-size: 17pt;"></mdb-icon> 882
+                  </p>
                 </div>
                 <div style="top:30%; left:15%;" class="top-project">
-                    <p style="display: inline-block; padding-top: 3%; padding-left: 10%; position: absolute; font-size: 17pt; font-family: Poppins, sans-serif;"><span style="color: black; font-weight: bolder;">Web Designer </span>by Charity B </p><p style="display: inline-block; padding-top: 4%; right: 10%; position: absolute; font-family: Poppins, sans-serif; font-size: 13pt; color:red;"><mdb-icon fas icon="heart" style="font-size: 17pt;"></mdb-icon> 345</p>
+                  <p style="display: inline-block; padding-top: 3%; padding-left: 10%; position: absolute; font-size: 17pt; font-family: Poppins, sans-serif;"><span style="color: black; font-weight: bolder;">Web Designer </span>by Charity B </p>
+                  <p style="display: inline-block; padding-top: 4%; right: 10%; position: absolute; font-family: Poppins, sans-serif; font-size: 13pt; color:red;">
+                    <mdb-icon fas icon="heart" style="font-size: 17pt;"></mdb-icon> 345
+                  </p>
                 </div>
                 <div style="top:40%; left:15%;" class="top-project">
-                    <p style="display: inline-block; padding-top: 3%; padding-left: 10%; position: absolute; font-size: 17pt; font-family: Poppins, sans-serif;"><span style="color: black; font-weight: bolder;">UI/UX Design </span>by Charity C </p><p style="display: inline-block; padding-top: 4%; right: 10%; position: absolute; font-family: Poppins, sans-serif; font-size: 13pt; color:red;"><mdb-icon fas icon="heart" style="font-size: 17pt;"></mdb-icon> 210</p>
+                  <p style="display: inline-block; padding-top: 3%; padding-left: 10%; position: absolute; font-size: 17pt; font-family: Poppins, sans-serif;"><span style="color: black; font-weight: bolder;">UI/UX Design </span>by Charity C </p>
+                  <p style="display: inline-block; padding-top: 4%; right: 10%; position: absolute; font-family: Poppins, sans-serif; font-size: 13pt; color:red;">
+                    <mdb-icon fas icon="heart" style="font-size: 17pt;"></mdb-icon> 210
+                  </p>
                 </div>
                 <p style="color: white; position:absolute; top:85%; margin-left: 15%; margin-right:10%; font-family: Poppins, sans-serif; font-size: 16px;">More completed projects ></p>
               </div>
-            <div class="left">
+              <div class="left">
                 <h2 style="position:relative; top:15%; left:20%; color:black; font-family: Poppins, sans-serif; font-weight: bolder;" >PROJECTS</h2>
                 <h4 style="position:relative; top:18%; left:20%; color: #c15230; font-family: Poppins, sans-serif; font-weight: bolder;">DESIGN</h4>
                 <p style="position:relative; top:20%; left:20%;">UI/UX</p>
                 <p style="position:relative; top:20.5%; left:20%;">Logo Design</p>
                 <p style="position:relative; top:21%; left:20%;">Advertisement Design</p>
-            </div>
-        </div>
-    </div>
-  </mdb-carousel-item>
-  </mdb-carousel>
-  <div id="user-statistics" style="padding-top:100px;height:100vh">
-    <h1 class="text-center mb-sm-0 font-weight-bold p-4" id="signup">SIGN UP TODAY!</h1>
-    <div class="d-flex text-center justify-content-center p-5" id="signup_body">
-      <div class="d-flex flex-column bg-light m-3 shadow" style="width:16rem; height: 20rem;">
-        <div style="height:8rem; background-color:white;"><img class="p-5" src="/assets/student.png" alt="..." /></div>
-        <div style="height:5rem; background-color:white;">NUMBER OF <span class="student_text">STUDENTS</span> REGISTERED</div>
-        <div class="d-flex align-items-center justify-content-center student_background" style="height: 7rem;">
-          <h1 class="text-light font-weight-bold" style="color:white;">000,000</h1>
-        </div>
-      </div>
-      <div class="d-flex flex-column bg-light m-3 shadow" style="width: 16rem; height: 20rem;">
-        <div style="height:8rem; background-color:white;"><img class="p-5" src="assets/charity.png" alt="..." /></div>
-        <div style="height:5rem; background-color:white;">NUMBER OF <span class="charity_text">CHARITIES</span> REGISTERED</div>
-        <div class="d-flex align-items-center justify-content-center charity_background" style="height: 7rem;">
-          <h1 class="text-light font-weight-bold" style="color:white;">000,000</h1>
-        </div>
-      </div>
-      <div class="d-flex flex-column bg-light m-3 shadow" style="width: 16rem; height: 20rem;">
-        <div style="height:8rem; background-color:white;"><img class="p-5" src="assets/project.png" alt="..." /></div>
-        <div style="height:5rem; background-color:white;">NUMBER OF <span class="project_text">PROJECTS</span> COMPLETED</div>
-        <div class="d-flex align-items-center justify-content-center project_background" style="height: 7rem;">
-          <h1 class="text-light font-weight-bold" style="color:white;">000,000</h1>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- The Modal -->
-  <div class="modal fade sign-up" role="dialog">
-      <div class="modal-dialog modal-sm" >
-        <div class="modal-content" style="width:600px !important;height:600px !important; margin-left:-120px; ">
-          <div style="position:absolute; width:100%; top: 30px;">
-              <h2 style="position: relative !important; text-align:center;">Join to be <span class="accent">paired</span> today!</h2>
-          </div>
-          <div style="height: 550px; width:100%;">
-              <input [(ngModel)]="searchText" class="sign-up-input search-input" placeholder="example@mail.com"/>
-              <button class="btn btn-option btn-block" id="explore-projects" style="position: absolute; left:50%; width: 100px !important; height: 45px !important; margin-left:-50px;top: 50%;" type="button" data-toggle="modal" data-target=".modal">SIGN UP</button>
-              <button [routerLink]="'/login'" class="btn btn-option btn-block" id="charity-button" style="position: absolute; left:50%; width: 100px !important; height: 45px !important; margin-left:-50px;top: 76%; font-size: 10px;" type="button">LOG IN</button>
-              <div style="position:absolute; width:100%; top:55%;">
-                  <p style="position: relative !important; text-align:center; ">Sign up with</p>
               </div>
-              <a class="p-2 fa-lg fb-ic">
+            </div>
+          </div>
+        </mdb-carousel-item>
+      </mdb-carousel>
+      <div id="user-statistics" style="padding-top:100px;height:100vh">
+        <h1 class="text-center mb-sm-0 font-weight-bold p-4" id="signup">SIGN UP TODAY!</h1>
+        <div class="d-flex text-center justify-content-center p-5" id="signup_body">
+          <div class="d-flex flex-column bg-light m-3 shadow" style="width:16rem; height: 20rem;">
+            <div style="height:8rem; background-color:white;"><img class="p-5" src="/assets/student.png" alt="..." /></div>
+              <div style="height:5rem; background-color:white;">NUMBER OF <span class="student_text">STUDENTS</span> REGISTERED</div>
+              <div class="d-flex align-items-center justify-content-center student_background" style="height: 7rem;">
+                <h1 class="text-light font-weight-bold" style="color:white;">000,000</h1>
+              </div>
+            </div>
+            <div class="d-flex flex-column bg-light m-3 shadow" style="width: 16rem; height: 20rem;">
+              <div style="height:8rem; background-color:white;"><img class="p-5" src="assets/charity.png" alt="..." /></div>
+                <div style="height:5rem; background-color:white;">NUMBER OF <span class="charity_text">CHARITIES</span> REGISTERED</div>
+                <div class="d-flex align-items-center justify-content-center charity_background" style="height: 7rem;">
+                  <h1 class="text-light font-weight-bold" style="color:white;">000,000</h1>
+                </div>
+              </div>
+              <div class="d-flex flex-column bg-light m-3 shadow" style="width: 16rem; height: 20rem;">
+                <div style="height:8rem; background-color:white;"><img class="p-5" src="assets/project.png" alt="..." /></div>
+                  <div style="height:5rem; background-color:white;">NUMBER OF <span class="project_text">PROJECTS</span> COMPLETED</div>
+                  <div class="d-flex align-items-center justify-content-center project_background" style="height: 7rem;">
+                    <h1 class="text-light font-weight-bold" style="color:white;">000,000</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- The Modal -->
+            <div class="modal fade sign-up" role="dialog">
+              <div class="modal-dialog modal-sm">
+                <div class="modal-content" style="width:600px !important;height:600px !important; margin-left:-120px; ">
+                  <div style="position:absolute; width:100%; top: 30px;">
+                    <h2 style="position: relative !important; text-align:center;">Join to be <span class="accent">paired</span> today!</h2>
+                  </div>
+                  <div style="height: 550px; width:100%;">
+                    <input [(ngModel)]="searchText" class="sign-up-input search-input" placeholder="example@mail.com"/>
+                    <button class="btn btn-option btn-block" id="explore-projects" style="position: absolute; left:50%; width: 100px !important; height: 45px !important; margin-left:-50px;top: 50%;" type="button" data-toggle="modal" data-target=".modal">SIGN UP</button>
+                    <button [routerLink]="'/login'" class="btn btn-option btn-block" id="charity-button" style="position: absolute; left:50%; width: 100px !important; height: 45px !important; margin-left:-50px;top: 76%; font-size: 10px;" type="button">LOG IN</button>
+                    <div style="position:absolute; width:100%; top:55%;">
+                      <p style="position: relative !important; text-align:center; ">Sign up with</p>
+                    </div>
+                    <a class="p-2 fa-lg fb-ic">
                   <mdb-icon style="position: absolute; left:45%; top: 62%;" fab icon="facebook-f" class="blue-text"> </mdb-icon>
               </a>
-              <a class="p-2 fa-lg ins-ic">
+                    <a class="p-2 fa-lg ins-ic">
                   <mdb-icon style="position: absolute; left:50%; top: 62%;" fab icon="github" class="blue-text"> </mdb-icon>
               </a>
-              <div style="position:absolute; width:100%; top:70%;">
-                  <p style="position: relative !important; text-align:center; ">Already have an account?</p>
+                    <div style="position:absolute; width:100%; top:70%;">
+                      <p style="position: relative !important; text-align:center; ">Already have an account?</p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
               </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
+            </div>

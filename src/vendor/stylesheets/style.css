@@ -317,12 +317,12 @@ h1, h2, h3, h4, h5, h6 {
   height:50%;
   width:auto;
   right: 10%;
-  position: absolute; 
+  position: absolute;
   bottom: 0;
 }
 
 #for-student-desc{
-  position: absolute; 
+  position: absolute;
   top:100px;
   left:10%;
 }
@@ -336,7 +336,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #for-charities-logo{
   left: 10%;
-  position: absolute; 
+  position: absolute;
   bottom: 0;
 }
 
@@ -350,13 +350,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #for-charities-desc{
-  position: absolute; 
+  position: absolute;
   top:100px;
   right:10%;
 }
 
 #for-charities-1{
-  position: absolute; 
+  position: absolute;
   top:200px;
   left:45%;
 }
@@ -364,7 +364,7 @@ h1, h2, h3, h4, h5, h6 {
 #how-it-works #text{
   font-weight: bolder;
   font-size: 33px;
-  position: absolute; 
+  position: absolute;
   top:55%;
   left:45%;
 }
@@ -372,7 +372,7 @@ h1, h2, h3, h4, h5, h6 {
 #how-it-works #arrow{
   font-weight: bolder;
   font-size: 33px;
-  position: absolute; 
+  position: absolute;
   top:62%;
   left:50%;
 }
@@ -420,12 +420,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sign-up-input{
-  position:absolute; 
-  top:30%; 
+  position:absolute;
+  top:30%;
   left:50%;
   height: 60px !important;
   border-radius: 20px;
-  margin-left:-211.5px; 
+  margin-left:-211.5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -607,12 +607,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   border-radius: 0;
   text-transform: uppercase;
-  font-size: 12px !important; 
-  
+  font-size: 12px !important;
+
 }
 
 input:focus{
-  outline: none !important;   
+  outline: none !important;
 }
 
 .search-bar {
@@ -1098,7 +1098,7 @@ button {outline:0 !important;}
   height: 45px;
   position: absolute;
   margin-top:-5px;
-  
+
 }
 
 .nav-menu ul {
@@ -1264,47 +1264,70 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /* MAIN LANDING */
-.container {
-  padding-top: 50px;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
+.container-height{
+  height: 100%;
+  overflow-y: hidden;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behaviour: smooth;
 }
 
 /*images*/
 #pear-name{
   display: block;
-  margin: 0vh 0vh 5vh 0vh;
-  width: 40vw;
+  width: 100%;
   height: auto;
+  padding-top: 7vh;
+  object-fit: cover;
 }
 
-#pear-logo {
+.pear-name-container{
+  width: 45vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 4vh;
+}
+
+.pear-logo {
   display: block;
-  width:15vw;
+  width: 100%;
   height: auto;
-  margin: 15vh 0vh 0vh 0vh;
+  object-fit: cover;
+}
+
+.pear-logo-container{
+  width: 20vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5vh;
+}
+
+@media (min-width: 1025px){
+  .pear-logo-container{
+    width: 15vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5vh;
+  }
 }
 
 /*text*/
 p {
   color: #A0A0A0;
   font-family: "Poppins", sans-serif;
-  font-size: 1.2rem;
+  font-size: 2.5vh;
   margin-bottom: 0px;
 }
 
-#value-prop-2{
+.value-prop-2{
   margin-bottom: 5vh;
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   p {
     font-size: 1.15rem;
     margin-bottom: 1.5vh;
@@ -1320,31 +1343,51 @@ p {
   p {
     font-size: 0.8rem;
   }
-}
+}*/
 
 /*buttons*/
 .btn-option {
   color: white !important;
   z-index: 1 !important;
   position: relative !important;
+  display: inline-box;
+  height: 100%;
 }
 
-#student-button {
+.student-button {
   background: url(/assets/button-blue.png) no-repeat;
   background-size: 100% 100%;
-  width:150px !important;
-  height:55px !important;
-  margin-left: 5vh;
+  /*margin-left: 5vh;*/
   border-radius: 0;
+  padding-left: 1vw;
+  padding-right: 1vw;
+
 }
 
-#charity-button {
+.charity-button {
   background: url(/assets/button-red.png) no-repeat;
   background-size: 100% 100%;
-  width:150px !important;
-  height:55px !important;
-  margin-left: 5vh;
+  /*margin-left: 5vh;*/
   border-radius: 0;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.row-height {
+  height: 6.97vh;
+}
+
+
+
+@media: (max-height: 375px) {
+  .row-height {
+    heigth: 4vh;
+  }
+}
+
+#col-padding {
+  padding-left: 0vh;
+  padding-right: 0vh;
 }
 
 @media (max-width: 375px) {
