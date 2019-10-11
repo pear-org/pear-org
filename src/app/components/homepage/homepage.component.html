@@ -19,8 +19,8 @@
   <div class="pear-logo-container">
     <img class="pear-logo" src="assets/pear-logo.png" />
   </div>
-  </div>
-  <div class="container-fluid container-height for-students">
+</div>
+  <div class="container-fluid container-height value-prop-style" id="for-students">
     <div class="row row-height-fill-page">
       <div class="col-7 for-student-desc" id="col-padding">
         <h1 id="title">FOR STUDENTS</h1>
@@ -40,7 +40,7 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid container-height for-students" id="for-charities">
+  <div class="container-fluid container-height value-prop-style" id="for-charities">
     <div class="row row-height-fill-page">
       <div class="col-9 for-student-desc" id="col-padding">
         <h1 id="title">FOR CHARITIES</h1>
@@ -181,8 +181,31 @@
               </div>
             </div> -->
 
+            <div class="container-fluid container-height user-statistics" id="sign-up" [@fadeInOut]>
+              <div class="sign-up-container">
+                <h1 class="text-center mb-sm-0 font-weight-bold p-4" id="signup">SIGN UP TODAY!</h1>
+              </div>
+              <div class="sign-up-text-wrapper">
+                <div class="text-center sign-up-prompt">
+                  The PEAR team is currently working hard to build more opportunities for students and develop a strong community. We will be officially launching at a later date. If you’re interested in working with a non-profit and gaining practical work experience, sign up with your email below to get notifications of future projects and our launch!
+                </div>
+              </div>
+              <form method="POST" action="https://formspree.io/you@example.com">
+                <div class="hpot">
+                  <label>Leave this field empty: <input name="_gotcha"></label>
+                </div>
+                <div class="input-group form-wrapper">
+                  <input type="email" class="form-control" placeholder="Enter your email">
+                  <span class="input-group-btn">
+                       <button class="btn btn-info" type="submit">Subscribe</button>
+                  </span>
+                </div>
+              </form>
+            </div>
+
+
             <!-- The Modal -->
-            <div class="modal fade sign-up" role="dialog">
+            <!-- <div class="modal fade sign-up" role="dialog">
               <div class="modal-dialog modal-sm">
                 <div class="modal-content" style="width:600px !important;height:600px !important; margin-left:-120px; ">
                   <div style="position:absolute; width:100%; top: 30px;">
@@ -210,4 +233,4 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->

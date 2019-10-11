@@ -307,13 +307,14 @@ h1, h2, h3, h4, h5, h6 {
   will-change: transform;
 }
 
-.for-students{
+.value-prop-style {
   font-family: "Poppins", sans-serif;
   height: 100vh;
   width: 100vw;
   background-color: #f8f8f8;
   position: relative
 }
+
 
 #for-student-logo{
   height:auto;
@@ -531,12 +532,48 @@ h1, h2, h3, h4, h5, h6 {
   padding-top:5px!important;
 }
 
+.user-statistics{
+  background: #D1D464;
+}
 
-#user-statistics{
+.sign-up-container {
+  padding-top: 10vh;
+}
+
+.sign-up-prompt{
+  color: white;
+  display: inline-block;
+  font-size: 2.5vh;
+  line-height: 5vh;
+  font-weight: bolder;
+}
+
+
+.hpot{
+  display:none;
+}
+
+.sign-up-text-wrapper {
+  text-align: center;
+  padding-left: 25vw;
+  padding-right: 25vw;
+  padding-bottom: 8vh;
+}
+
+.form-wrapper {
+  padding-left: 30vw;
+  padding-right: 30vw;
+}
+
+.btn-info, .btn-info:hover, .btn-info:active, .btn-info:visited {
+    background-color: #4AB8C9;
+}
+
+/*#user-statistics{
   height: 700px;
   background: rgb(185,177,58);
   width: 100%;
-}
+}*/
 .student_text{
   color: rgb(112,159,182);
 }
@@ -557,8 +594,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 #signup{
   font-size: 3rem;
-  color: rgb(228,228,155);
+  color: #f4f4d7;
   text-shadow: 3px 3px 6px rgb(150,150,50);
+  padding-top: 30vh;
 }
 
 .app {
@@ -667,6 +705,7 @@ input:focus{
   width: 1064px;
   margin: 0 auto;
   height: auto;
+  padding-top: 10vh;
 }
 
 .job-cards{
@@ -1289,14 +1328,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* MAIN LANDING */
 .container-height{
-  height: 100%;
+  height: 100vh;
   overflow-y: hidden;
-  width: 100%;
+  width: 100vw;
 }
 
 html,body{
-  height: 100vh;
-  width: 100vw;
   overflow-x: hidden;
   margin: 0 0 0 0;
   padding: 0 0 0 0;
@@ -1442,7 +1479,9 @@ p {
   padding: 80px 0;
 }
 
-
+.team-section {
+  padding-top: 6vh;
+}
 
 #about .about-container .content {
   background: #fff;
