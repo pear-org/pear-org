@@ -560,10 +560,45 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 8vh;
 }
 
+
+
 .form-wrapper {
   padding-left: 30vw;
   padding-right: 30vw;
 }
+
+@media (max-width: 480px) {
+  .sign-up-text-wrapper {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 8vh;
+  }
+  .sign-up-prompt {
+    line-height: 3vh;
+    font-size: 2.2vh;
+  }
+  .form-wrapper {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+}
+
+@media (max-width: 1366px) {
+  .sign-up-text-wrapper {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 8vh;
+  }
+  .sign-up-prompt {
+    line-height: 3vh;
+    font-size: 2.5vh;
+  }
+  .form-wrapper {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+}
+
 
 .btn-info, .btn-info:hover, .btn-info:active, .btn-info:visited {
     background-color: #4AB8C9;
