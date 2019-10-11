@@ -1289,7 +1289,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* MAIN LANDING */
 .container-height{
   height: 100%;
-  overflow-y: hidden;
+  overflow-y: scroll;
   width: 100%;
 }
 
